@@ -53,3 +53,46 @@ O script foi projetado para **automação**, **robustez** e **uso corporativo**,
 ├── sftp_downloader.py
 ├── id_rsa               # Chave privada SSH
 └── README.md
+
+```
+---
+
+## 🔧 Configuração
+
+Edite as variáveis no início do script conforme o seu ambiente:
+
+```python
+HOST = "sftp.seuservidor.com"
+PORT = 22
+USERNAME = "seu_usuario_aqui"
+PASSPHRASE = None  # Caso sua chave tenha senha
+REMOTE_DIR = "/caminho/remoto/dos/arquivos"
+
+LOCAL_DIR_ARQV1 = r"C:\caminho\local\ARQV1"
+LOCAL_DIR_ARQV2 = r"C:\caminho\local\ARQV2"
+
+```
+---
+
+## ▶️ Como Executar
+
+- 1️⃣ Instalar dependências
+
+```bash
+pip install paramiko
+
+```
+
+- 2️⃣ Executar o script
+
+```bash
+python sftp_downloader.py
+
+```
+
+---
+
+## 👨‍💻 Autor
+
+Desenvolvido por **Mateus Caique**
+🔗 GitHub: [https://github.com/Mateus-Caique-Py](https://github.com/Mateus-Caique-Py)
